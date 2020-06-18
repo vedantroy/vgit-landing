@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import Button from '../elements/Button';
+import { Link } from "react-router-dom"
 import Image from '../elements/Image';
 
 const propTypes = {
@@ -70,9 +71,12 @@ class HeroSplit extends React.Component {
                     Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="400">
+                    {/*
                     <Button tag="a" color="primary" href="https://cruip.com/" wideMobile>
                       Get started
                     </Button>
+                    */}
+                    <Link to="/signup" className="button button-primary">Get started</Link>
                   </div>
                 </div>
                 <div className="hero-figure is-3d split-item-image illustration-element-01 reveal-scale-up">

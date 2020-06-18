@@ -95,46 +95,6 @@ class Header extends React.Component {
               bottomDivider && 'has-bottom-divider'
             )}>
             <Logo />
-            {!hideNav &&
-              <React.Fragment>
-                <button
-                  ref={this.hamburger}
-                  className="header-nav-toggle"
-                  onClick={this.state.isActive ? this.closeMenu : this.openMenu}
-                >
-                  <span className="screen-reader">Menu</span>
-                  <span className="hamburger">
-                    <span className="hamburger-inner"></span>
-                  </span>
-                </button>
-                <nav
-                  ref={this.nav}
-                  className={
-                    classNames(
-                      'header-nav',
-                      this.state.isActive && 'is-active'
-                    )}>
-                  <div className="header-nav-inner">
-                    <ul className={
-                      classNames(
-                        'list-reset text-xxs',
-                        navPosition && `header-nav-${navPosition}`
-                      )}>
-                      <li>
-                        <Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>
-                      </li>
-                    </ul>
-                    {!hideSignin &&
-                      <ul
-                        className="list-reset header-nav-right"
-                      >
-                        <li>
-                          <Link to="/signup/" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
-                        </li>
-                      </ul>}
-                  </div>
-                </nav>
-              </React.Fragment>}
           </div>
         </div>
       </header>

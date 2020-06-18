@@ -12,7 +12,9 @@ class Home extends React.Component {
         <HeroSplit imageFill className="illustration-section-01" />
         <FeaturesTiles />
         <FeaturesSplit invertMobile imageFill className="illustration-section-05" />
+        {/*
         <Pricing pricingSwitcher className="illustration-section-03" />
+        */}
         <Cta topDivider bottomDivider split />
       </React.Fragment>
     );

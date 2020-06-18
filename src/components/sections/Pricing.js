@@ -47,18 +47,21 @@ class Pricing extends React.Component {
   sliderValue = React.createRef();
 
   componentDidMount() {
+    /*
     if (this.props.pricingSlider) {
       this.slider.current.setAttribute('min', 0);
       this.slider.current.setAttribute('max', Object.keys(this.state.priceInput).length - 1);
       this.thumbSize = parseInt(window.getComputedStyle(this.sliderValue.current).getPropertyValue('--thumb-size'), 10);
       this.handleSliderValuePosition(this.slider.current);
     }
+    */
   }
 
   handlePricingSwitch = (e) => {
     this.setState({ priceChangerValue: e.target.checked ? '1' : '0' });
   }
 
+  /*
   handlePricingSlide = (e) => {
     this.setState({ priceChangerValue: e.target.value });
     this.handleSliderValuePosition(e.target);
@@ -70,6 +73,7 @@ class Pricing extends React.Component {
     const priceInputOffset = (this.thumbSize - this.sliderValue.current.clientWidth) / 2;
     this.sliderValue.current.style.left = input.clientWidth * multiplier - thumbOffset + priceInputOffset + 'px';
   }
+  */
 
   getPricingData = (values, set) => {
     return set !== undefined ? values[this.state.priceChangerValue][set] : values[this.state.priceChangerValue];
@@ -124,32 +128,6 @@ class Pricing extends React.Component {
         <div className="container">
           <div className={innerClasses}>
             <SectionHeader data={sectionHeader} className="center-content invert-color" />
-            {pricingSwitcher &&
-              <div className="pricing-switcher center-content">
-                <Switch
-                  checked={this.state.priceChangerValue === '1' ? true : false}
-                  onChange={this.handlePricingSwitch}
-                  rightLabel="Billed Annually">
-                    Billed Monthly
-                </Switch>
-              </div>
-            }
-            {pricingSlider &&
-              <div className="pricing-slider center-content invert-color">
-                <label className="form-slider">
-                  <span className="mb-16">How many users do you have?</span>
-                  <input
-                    type="range"
-                    ref={this.slider}
-                    defaultValue={this.state.priceChangerValue}
-                    onChange={this.handlePricingSlide}
-                  />
-                </label>
-                <div ref={this.sliderValue} className="pricing-slider-value">
-                  {this.getPricingData(this.state.priceInput)}
-                </div>
-              </div>
-            }            
             <div className={tilesClasses}>
 
               <div className="tiles-item reveal-scale-up">

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
+import { Link } from "react-router-dom"
 import Button from '../elements/Button';
 
 const propTypes = {
@@ -60,9 +61,7 @@ class Cta extends React.Component {
               </h3>
             </div>
             <div className="cta-action reveal-from-right">
-              <Button tag="a" color="primary" wideMobile href="#">
-                Get started
-              </Button>
+              <Link to="/signup" className="button button-primary">Get started</Link>
             </div>
           </div>
         </div>
