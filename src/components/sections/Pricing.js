@@ -1,26 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Switch from '../elements/Switch';
-import Button from '../elements/Button';
-import Image from '../elements/Image';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Switch from "../elements/Switch";
+import Button from "../elements/Button";
+import Image from "../elements/Image";
 
 const propTypes = {
   ...SectionTilesProps.types,
   pricingSwitcher: PropTypes.bool,
-  pricingSlider: PropTypes.bool
-}
+  pricingSlider: PropTypes.bool,
+};
 
 const defaultProps = {
   ...SectionTilesProps.defaults,
   pricingSwitcher: false,
-  pricingSlider: false
-}
+  pricingSlider: false,
+};
 
 class Pricing extends React.Component {
-
   state = {
     priceChangerValue: "1",
     priceInput: {
@@ -30,18 +29,18 @@ class Pricing extends React.Component {
     priceOutput: {
       plan1: {
         0: ["$", "55", "monthly"],
-        1: ["$", "47", "annually"]
+        1: ["$", "47", "annually"],
       },
       plan2: {
         0: ["$", "75", "monthly"],
-        1: ["$", "67", "annually"]
+        1: ["$", "67", "annually"],
       },
       plan3: {
         0: ["$", "109", "monthly"],
-        1: ["$", "97", "annually"]
-      }      
-    }
-  }
+        1: ["$", "97", "annually"],
+      },
+    },
+  };
 
   slider = React.createRef();
   sliderValue = React.createRef();
@@ -58,8 +57,8 @@ class Pricing extends React.Component {
   }
 
   handlePricingSwitch = (e) => {
-    this.setState({ priceChangerValue: e.target.checked ? '1' : '0' });
-  }
+    this.setState({ priceChangerValue: e.target.checked ? "1" : "0" });
+  };
 
   /*
   handlePricingSlide = (e) => {
@@ -76,15 +75,16 @@ class Pricing extends React.Component {
   */
 
   getPricingData = (values, set) => {
-    return set !== undefined ? values[this.state.priceChangerValue][set] : values[this.state.priceChangerValue];
-  }
+    return set !== undefined
+      ? values[this.state.priceChangerValue][set]
+      : values[this.state.priceChangerValue];
+  };
 
   render() {
-
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -96,40 +96,39 @@ class Pricing extends React.Component {
     } = this.props;
 
     const outerClasses = classNames(
-      'pricing section',
-      topOuterDivider && 'has-top-divider',
-      bottomOuterDivider && 'has-bottom-divider',
-      hasBgColor && 'has-bg-color',
-      invertColor && 'invert-color',
+      "pricing section",
+      topOuterDivider && "has-top-divider",
+      bottomOuterDivider && "has-bottom-divider",
+      hasBgColor && "has-bg-color",
+      invertColor && "invert-color",
       className
     );
 
     const innerClasses = classNames(
-      'pricing-inner section-inner',
-      topDivider && 'has-top-divider',
-      bottomDivider && 'has-bottom-divider'
+      "pricing-inner section-inner",
+      topDivider && "has-top-divider",
+      bottomDivider && "has-bottom-divider"
     );
 
     const tilesClasses = classNames(
-      'tiles-wrap illustration-section-07',
-      pushLeft && 'push-left'
+      "tiles-wrap illustration-section-07",
+      pushLeft && "push-left"
     );
 
     const sectionHeader = {
-      title: 'Simple pricing',
-      paragraph: ''
+      title: "Simple pricing",
+      paragraph: "",
     };
 
     return (
-      <section
-        {...props}
-        className={outerClasses}
-      >
+      <section {...props} className={outerClasses}>
         <div className="container">
           <div className={innerClasses}>
-            <SectionHeader data={sectionHeader} className="center-content invert-color" />
+            <SectionHeader
+              data={sectionHeader}
+              className="center-content invert-color"
+            />
             <div className={tilesClasses}>
-
               <div className="tiles-item reveal-scale-up">
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
@@ -143,7 +142,8 @@ class Pricing extends React.Component {
                         </span>
                       </div>
                       <div className="text-color-low text-xs">
-                        /month, billed {this.getPricingData(this.state.priceOutput.plan1, 2)}
+                        /month, billed{" "}
+                        {this.getPricingData(this.state.priceOutput.plan1, 2)}
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
@@ -151,21 +151,37 @@ class Pricing extends React.Component {
                         What's included
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
                         <li>Excepteur sint occaecat velit</li>
                         <li>Excepteur sint occaecat velit</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
+                    <Button
+                      tag="a"
+                      color="primary"
+                      wide
+                      href="http://cruip.com/"
+                    >
+                      Start free trial
+                    </Button>
                   </div>
                 </div>
               </div>
 
-              <div className="tiles-item reveal-scale-up" data-reveal-delay="200">
+              <div
+                className="tiles-item reveal-scale-up"
+                data-reveal-delay="200"
+              >
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
@@ -178,30 +194,55 @@ class Pricing extends React.Component {
                         </span>
                       </div>
                       <div className="text-color-low text-xs">
-                        /month, billed {this.getPricingData(this.state.priceOutput.plan2, 2)}
+                        /month, billed{" "}
+                        {this.getPricingData(this.state.priceOutput.plan2, 2)}
                       </div>
-                      <Image className="pricing-item-icon" src={require('./../../assets/images/pricing-icon.svg')} alt="Diamond" width={38} height={40} />
+                      <Image
+                        className="pricing-item-icon"
+                        src={require("./../../assets/images/pricing-icon.svg")}
+                        alt="Diamond"
+                        width={38}
+                        height={40}
+                      />
                     </div>
                     <div className="pricing-item-features mb-40">
                       <div className="pricing-item-features-title fw-500 text-xs text-color-high mb-24">
                         What's included
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
                         <li>Excepteur sint occaecat velit</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="secondary" wide href="http://cruip.com/">Start free trial</Button>
+                    <Button
+                      tag="a"
+                      color="secondary"
+                      wide
+                      href="http://cruip.com/"
+                    >
+                      Start free trial
+                    </Button>
                   </div>
                 </div>
               </div>
 
-              <div className="tiles-item reveal-scale-up" data-reveal-delay="200">
+              <div
+                className="tiles-item reveal-scale-up"
+                data-reveal-delay="200"
+              >
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
@@ -214,7 +255,8 @@ class Pricing extends React.Component {
                         </span>
                       </div>
                       <div className="text-color-low text-xs">
-                        /month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
+                        /month, billed{" "}
+                        {this.getPricingData(this.state.priceOutput.plan3, 2)}
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
@@ -222,20 +264,36 @@ class Pricing extends React.Component {
                         What's included
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
+                        <li className="is-checked">
+                          Excepteur sint occaecat velit
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
+                    <Button
+                      tag="a"
+                      color="primary"
+                      wide
+                      href="http://cruip.com/"
+                    >
+                      Start free trial
+                    </Button>
                   </div>
                 </div>
-              </div>                            
-
+              </div>
             </div>
           </div>
         </div>

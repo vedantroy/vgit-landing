@@ -1,22 +1,10 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 
-const CarouselItem = ({
-  className,
-  ...props
-}) => {
+const CarouselItem = ({ className, ...props }) => {
+  const classes = classNames("carousel-item", className);
 
-  const classes = classNames(
-    'carousel-item',
-    className
-  );
-
-  return (
-    <div
-      {...props}
-      className={classes}
-    />
-  );
-}
+  return <div {...props} className={classes} />;
+};
 
 export default CarouselItem;

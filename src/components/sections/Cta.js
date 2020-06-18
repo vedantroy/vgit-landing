@@ -1,27 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import { Link } from "react-router-dom"
-import Button from '../elements/Button';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import { SectionProps } from "../../utils/SectionProps";
+import { Link } from "react-router-dom";
+import Button from "../elements/Button";
 
 const propTypes = {
   ...SectionProps.types,
-  split: PropTypes.bool
-}
+  split: PropTypes.bool,
+};
 
 const defaultProps = {
   ...SectionProps.defaults,
-  split: false
-}
+  split: false,
+};
 
 class Cta extends React.Component {
-
   render() {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -31,37 +30,32 @@ class Cta extends React.Component {
     } = this.props;
 
     const outerClasses = classNames(
-      'cta section center-content-mobile',
-      topOuterDivider && 'has-top-divider',
-      bottomOuterDivider && 'has-bottom-divider',
-      hasBgColor && 'has-bg-color',
-      invertColor && 'invert-color',
+      "cta section center-content-mobile",
+      topOuterDivider && "has-top-divider",
+      bottomOuterDivider && "has-bottom-divider",
+      hasBgColor && "has-bg-color",
+      invertColor && "invert-color",
       className
     );
 
     const innerClasses = classNames(
-      'cta-inner section-inner',
-      topDivider && 'has-top-divider',
-      bottomDivider && 'has-bottom-divider',
-      split && 'cta-split'
+      "cta-inner section-inner",
+      topDivider && "has-top-divider",
+      bottomDivider && "has-bottom-divider",
+      split && "cta-split"
     );
 
     return (
-      <section
-        {...props}
-        className={outerClasses}
-      >
+      <section {...props} className={outerClasses}>
         <div className="container">
-          <div
-            className={innerClasses}
-          >
+          <div className={innerClasses}>
             <div className="cta-slogan reveal-from-left">
-              <h3 className="m-0">
-                Nisi porta lorem mollis aliquam ut.
-              </h3>
+              <h3 className="m-0">Nisi porta lorem mollis aliquam ut.</h3>
             </div>
             <div className="cta-action reveal-from-right">
-              <Link to="/signup" className="button button-primary">Get started</Link>
+              <Link to="/signup" className="button button-primary">
+                Get started
+              </Link>
             </div>
           </div>
         </div>

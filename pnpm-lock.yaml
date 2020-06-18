@@ -2,6 +2,7 @@ dependencies:
   classnames: 2.2.6
   lodash: 4.17.15
   node-sass: 4.14.1
+  prettier: 2.0.5
   prop-types: 15.7.2
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
@@ -9399,6 +9400,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+  /prettier/2.0.5:
+    dev: false
+    engines:
+      node: '>=10.13.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
   /pretty-bytes/5.3.0:
     dev: false
     engines:
@@ -12065,6 +12073,7 @@ specifiers:
   classnames: ^2.2.6
   lodash: ^4.17.15
   node-sass: ^4.14.1
+  prettier: ^2.0.5
   prop-types: ^15.7.2
   react: ^16.13.1
   react-dom: ^16.13.1
