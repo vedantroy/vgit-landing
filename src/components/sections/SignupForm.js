@@ -66,12 +66,13 @@ class SignupForm extends React.Component {
             <div className="tiles-wrap">
               <div className="tiles-item">
                 <div className="tiles-item-inner">
-                  <form>
+                  <form action="https://formspree.io/mknqzzjr" method="POST">
                     <fieldset>
                       <div className="mb-12">
                         <Input
                           label="Full name"
                           placeholder="Full name"
+                          name="name"
                           labelHidden
                           required
                         />
@@ -81,17 +82,18 @@ class SignupForm extends React.Component {
                           type="email"
                           label="Email"
                           placeholder="Email"
+                          name="email"
                           labelHidden
                           required
                         />
                       </div>
                       <div className="mt-24 mb-32">
-                        <Link
+                        <Button
                           className="button button-primary button-block"
-                          to="/reload"
+                          type="submit"
                         >
                           Submit
-                        </Link>
+                        </Button>
                       </div>
                     </fieldset>
                   </form>
