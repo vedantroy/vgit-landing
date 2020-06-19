@@ -79,7 +79,7 @@ class FeaturesSplit extends React.Component {
                   )}
                 >
                   <Image
-                    src={require("./../../assets/images/create_video_docs.svg")}
+                    src={require("./../../assets/images/create_video_docs_new.svg")}
                     alt="Features split 01"
                     width={528}
                     height={396}

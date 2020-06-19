@@ -83,9 +83,9 @@ class FeaturesTiles extends React.Component {
                       data-reveal-delay="200"
                     >
                       Video docs complement comments by giving extra
-                      information. Use your videos to point to specific lines and give
-                      detailed explanations that provide additional context
-                      behind the code.
+                      information. Use your videos to point to specific lines
+                      and give detailed explanations that provide additional
+                      context behind the code.
                     </p>
                   </div>
                 </div>

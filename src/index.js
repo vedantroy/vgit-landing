@@ -9,7 +9,7 @@ import * as serviceWorker from "./serviceWorker";
 import "./assets/scss/style.scss";
 
 //const history = createBrowserHistory();
-console.log('rendering')
+console.log("rendering");
 
 ReactDOM.render(
   <Router basename={process.env.PUBLIC_URL}>
