@@ -10,7 +10,7 @@ import LayoutSignin from "./layouts/LayoutSignin";
 
 // Views
 import Home from "./views/Home";
-import Secondary from "./views/Secondary";
+//import Secondary from "./views/Secondary";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
 

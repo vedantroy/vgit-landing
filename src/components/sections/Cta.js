@@ -50,11 +50,11 @@ class Cta extends React.Component {
         <div className="container">
           <div className={innerClasses}>
             <div className="cta-slogan reveal-from-left">
-              <h3 className="m-0">Nisi porta lorem mollis aliquam ut.</h3>
+              <h3 className="m-0">Get started with VideoGit</h3>
             </div>
             <div className="cta-action reveal-from-right">
               <Link to="/signup" className="button button-primary">
-                Get started
+                Schedule A Demo Now
               </Link>
             </div>
           </div>

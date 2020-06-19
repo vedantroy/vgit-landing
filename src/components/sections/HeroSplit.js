@@ -60,23 +60,17 @@ class HeroSplit extends React.Component {
               <div className="split-item">
                 <div className="hero-content split-item-content center-content-mobile">
                   <h1 className="mt-0 mb-16 reveal-from-left">
-                    Landing template for startups
+                    Video Docs For Code
                   </h1>
                   <p
                     className="mt-0 mb-24 reveal-from-left"
                     data-reveal-delay="200"
                   >
-                    Our landing page template works on all devices, so you only
-                    have to set it up once, and get beautiful results forever.
+                    VideoGit "<b>vgit</b>" makes every chunk of code have rich video documentation that's only <b>1</b> command away.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="400">
-                    {/*
-                    <Button tag="a" color="primary" href="https://cruip.com/" wideMobile>
-                      Get started
-                    </Button>
-                    */}
                     <Link to="/signup" className="button button-primary">
-                      Get started
+                      Schedule A Demo Now
                     </Link>
                   </div>
                 </div>
