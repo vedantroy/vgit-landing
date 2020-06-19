@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/vgit-landing/static/css/main.4f9a40be.chunk.css",
-    "main.js": "/vgit-landing/static/js/main.2549cf71.chunk.js",
-    "main.js.map": "/vgit-landing/static/js/main.2549cf71.chunk.js.map",
+    "main.js": "/vgit-landing/static/js/main.3f5104f3.chunk.js",
+    "main.js.map": "/vgit-landing/static/js/main.3f5104f3.chunk.js.map",
     "runtime~main.js": "/vgit-landing/static/js/runtime~main.342a5109.js",
     "runtime~main.js.map": "/vgit-landing/static/js/runtime~main.342a5109.js.map",
     "static/js/2.9f6c5350.chunk.js": "/vgit-landing/static/js/2.9f6c5350.chunk.js",
     "static/js/2.9f6c5350.chunk.js.map": "/vgit-landing/static/js/2.9f6c5350.chunk.js.map",
     "index.html": "/vgit-landing/index.html",
-    "precache-manifest.d67bf1da64de0b5559d3b9d23978b64b.js": "/vgit-landing/precache-manifest.d67bf1da64de0b5559d3b9d23978b64b.js",
+    "precache-manifest.74203ba5ec92bc0ae78d488ad81a4462.js": "/vgit-landing/precache-manifest.74203ba5ec92bc0ae78d488ad81a4462.js",
     "service-worker.js": "/vgit-landing/service-worker.js",
     "static/css/main.4f9a40be.chunk.css.map": "/vgit-landing/static/css/main.4f9a40be.chunk.css.map",
     "static/media/create_video_docs.svg": "/vgit-landing/static/media/create_video_docs.9f262ef8.svg",

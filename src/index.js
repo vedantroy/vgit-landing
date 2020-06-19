@@ -12,7 +12,7 @@ import "./assets/scss/style.scss";
 console.log('rendering')
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <App />
   </Router>,
   document.getElementById("root")
