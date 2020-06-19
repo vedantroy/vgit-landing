@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "074d50baf04697fccaa3b35c9a522d3b",
+    "revision": "7beb2edece3e83ba2c4890690fed11d5",
     "url": "/vgit-landing/index.html"
   },
   {
-    "revision": "4c01a85ecb0467f33b70",
+    "revision": "ac2f97498b399e3ef385",
     "url": "/vgit-landing/static/css/main.4f9a40be.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vgit-landing/static/js/2.9f6c5350.chunk.js"
   },
   {
-    "revision": "4c01a85ecb0467f33b70",
-    "url": "/vgit-landing/static/js/main.20e7e46b.chunk.js"
+    "revision": "ac2f97498b399e3ef385",
+    "url": "/vgit-landing/static/js/main.2549cf71.chunk.js"
   },
   {
     "revision": "b239d3212a0d7d35282b",
