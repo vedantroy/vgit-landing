@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
+import { Link } from "react-router-dom";
 import SectionHeader from "./partials/SectionHeader";
 import Switch from "../elements/Switch";
 import Button from "../elements/Button";
@@ -45,34 +46,9 @@ class Pricing extends React.Component {
   slider = React.createRef();
   sliderValue = React.createRef();
 
-  componentDidMount() {
-    /*
-    if (this.props.pricingSlider) {
-      this.slider.current.setAttribute('min', 0);
-      this.slider.current.setAttribute('max', Object.keys(this.state.priceInput).length - 1);
-      this.thumbSize = parseInt(window.getComputedStyle(this.sliderValue.current).getPropertyValue('--thumb-size'), 10);
-      this.handleSliderValuePosition(this.slider.current);
-    }
-    */
-  }
-
   handlePricingSwitch = (e) => {
     this.setState({ priceChangerValue: e.target.checked ? "1" : "0" });
   };
-
-  /*
-  handlePricingSlide = (e) => {
-    this.setState({ priceChangerValue: e.target.value });
-    this.handleSliderValuePosition(e.target);
-  }
-
-  handleSliderValuePosition = (input) => {
-    const multiplier = input.value / input.max;
-    const thumbOffset = this.thumbSize * multiplier;
-    const priceInputOffset = (this.thumbSize - this.sliderValue.current.clientWidth) / 2;
-    this.sliderValue.current.style.left = input.clientWidth * multiplier - thumbOffset + priceInputOffset + 'px';
-  }
-  */
 
   getPricingData = (values, set) => {
     return set !== undefined
@@ -121,7 +97,7 @@ class Pricing extends React.Component {
     };
 
     return (
-      <section {...props} className={outerClasses}>
+      <section {...props} className={outerClasses} id="pricing-section">
         <div className="container">
           <div className={innerClasses}>
             <SectionHeader
@@ -135,15 +111,12 @@ class Pricing extends React.Component {
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price mb-4">
                         <span className="pricing-item-price-currency h2 text-color-low">
-                          {this.getPricingData(this.state.priceOutput.plan1, 0)}
+                          $
                         </span>
-                        <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan1, 1)}
-                        </span>
+                        <span className="pricing-item-price-amount h1">0</span>
                       </div>
                       <div className="text-color-low text-xs">
-                        /month, billed{" "}
-                        {this.getPricingData(this.state.priceOutput.plan1, 2)}
+                        /month, for individuals
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
@@ -152,28 +125,21 @@ class Pricing extends React.Component {
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
                         <li className="is-checked">
-                          Excepteur sint occaecat velit
+                          Up to Ten, One Minute VideoDocs
                         </li>
                         <li className="is-checked">
-                          Excepteur sint occaecat velit
+                          Anyone can view VideoDocs
                         </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
-                        <li>Excepteur sint occaecat velit</li>
-                        <li>Excepteur sint occaecat velit</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button
-                      tag="a"
-                      color="primary"
-                      wide
-                      href="http://cruip.com/"
+                    <Link
+                      to="/signup"
+                      className="button button-primary button-block"
                     >
-                      Start free trial
-                    </Button>
+                      Download
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -187,15 +153,12 @@ class Pricing extends React.Component {
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price mb-4">
                         <span className="pricing-item-price-currency h2 text-color-low">
-                          {this.getPricingData(this.state.priceOutput.plan2, 0)}
+                          $
                         </span>
-                        <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan2, 1)}
-                        </span>
+                        <span className="pricing-item-price-amount h1">10</span>
                       </div>
                       <div className="text-color-low text-xs">
-                        /month, billed{" "}
-                        {this.getPricingData(this.state.priceOutput.plan2, 2)}
+                        /month, for businesses
                       </div>
                       <Image
                         className="pricing-item-icon"
@@ -210,31 +173,21 @@ class Pricing extends React.Component {
                         What's included
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
+                        <li className="is-checked">Unlimited VideoDocs</li>
                         <li className="is-checked">
-                          Excepteur sint occaecat velit
+                          Max Five Minute VideoDoc Length
                         </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
-                        <li>Excepteur sint occaecat velit</li>
+                        <li className="is-checked">Restrict VideoDoc Access</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button
-                      tag="a"
-                      color="secondary"
-                      wide
-                      href="http://cruip.com/"
+                    <Link
+                      to="/signup"
+                      className="button button-secondary button-block"
                     >
-                      Start free trial
-                    </Button>
+                      Start Free Trial
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -247,16 +200,12 @@ class Pricing extends React.Component {
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price mb-4">
-                        <span className="pricing-item-price-currency h2 text-color-low">
-                          {this.getPricingData(this.state.priceOutput.plan3, 0)}
-                        </span>
                         <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan3, 1)}
+                          Custom Price
                         </span>
                       </div>
                       <div className="text-color-low text-xs">
-                        /month, billed{" "}
-                        {this.getPricingData(this.state.priceOutput.plan3, 2)}
+                        /month, for enterprises
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
@@ -264,33 +213,22 @@ class Pricing extends React.Component {
                         What's included
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
+                        <li className="is-checked">Unlimited VideoDocs</li>
                         <li className="is-checked">
-                          Excepteur sint occaecat velit
+                          Unlimited VideoDoc Length
                         </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
-                        <li className="is-checked">
-                          Excepteur sint occaecat velit
-                        </li>
+                        <li className="is-checked">Restrict VideoDoc Access</li>
+                        <li className="is-checked">On-Demand Support</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button
-                      tag="a"
-                      color="primary"
-                      wide
-                      href="http://cruip.com/"
+                    <Link
+                      to="/signup"
+                      className="button button-primary button-block"
                     >
-                      Start free trial
-                    </Button>
+                      Contact Us
+                    </Link>
                   </div>
                 </div>
               </div>

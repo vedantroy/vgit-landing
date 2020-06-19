@@ -45,7 +45,7 @@ class Footer extends React.Component {
               <FooterNav />
               */}
               <div className="footer-copyright">
-                &copy; 2020 Twist, all rights reserved
+                &copy; 2020 VideoGit, all rights reserved
               </div>
             </div>
           </div>

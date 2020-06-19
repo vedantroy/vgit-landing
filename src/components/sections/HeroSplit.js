@@ -66,18 +66,22 @@ class HeroSplit extends React.Component {
                     className="mt-0 mb-24 reveal-from-left"
                     data-reveal-delay="200"
                   >
-                    VideoGit "<b>vgit</b>" makes every chunk of code have rich video documentation that's only <b>1</b> command away.
+                    VideoDoc "<b>vdoc</b>" makes every chunk of code have rich
+                    video documentation that's only <b>1</b> command away.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="400">
-                    <Link to="/signup" className="button button-primary">
-                      Schedule A Demo Now
-                    </Link>
+                    <a
+                      href="#pricing-section"
+                      className="button button-primary"
+                    >
+                      Get Started
+                    </a>
                   </div>
                 </div>
                 <div className="hero-figure is-3d split-item-image illustration-element-01 reveal-scale-up">
                   <Image
                     className="has-shadow"
-                    src={require("./../../assets/images/hero-image.svg")}
+                    src={require("./../../assets/images/main.png")}
                     alt="Hero"
                     width={528}
                     height={396}

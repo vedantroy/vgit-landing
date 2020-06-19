@@ -10,16 +10,13 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <HeroSplit imageFill className="illustration-section-01" />
-        <FeaturesTiles />
         <FeaturesSplit
           invertMobile
           imageFill
           className="illustration-section-05"
         />
-        {/*
+        <FeaturesTiles />
         <Pricing pricingSwitcher className="illustration-section-03" />
-        */}
-        <Cta topDivider bottomDivider split />
       </React.Fragment>
     );
   }

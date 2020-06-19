@@ -54,7 +54,7 @@ class FeaturesSplit extends React.Component {
     const sectionHeader = {
       title: "Documentation for the Modern Age",
       paragraph:
-        "vgit automatically maps documentation to code, so you can easily find relevant information when developing.",
+        "VideoDoc automatically maps documentation to code, so you can easily find relevant information when developing.",
     };
 
     return (
@@ -68,8 +68,8 @@ class FeaturesSplit extends React.Component {
                   <h3 className="mt-0 mb-16">Easily Generate Documentation</h3>
                   <p className="m-0">
                     Record a explanatory video of your code and automatically
-                    associate it with set of commit(s) / file(s) for future contributors
-                    to find.
+                    associate it with set of commit(s) / file(s) for future
+                    contributors to find.
                   </p>
                 </div>
                 <div
@@ -79,7 +79,7 @@ class FeaturesSplit extends React.Component {
                   )}
                 >
                   <Image
-                    src={require("./../../assets/images/carbon.svg")}
+                    src={require("./../../assets/images/create_video_docs.svg")}
                     alt="Features split 01"
                     width={528}
                     height={396}
@@ -91,9 +91,10 @@ class FeaturesSplit extends React.Component {
                 <div className="split-item-content center-content-mobile">
                   <h3 className="mt-0 mb-16">Quickly Understand Code</h3>
                   <p className="m-0">
-                    A better <code>git blame</code>. Find all relevant videos that are
-                    associated with a chunk of code. VideoDoc discards old videos and tracks
-                    file renames across commits, so you only get relevant results.
+                    A better <code>git blame</code>. Find all relevant videos
+                    that are associated with a chunk of code. VideoDoc discards
+                    old videos and tracks file renames across commits, so you
+                    only get relevant results.
                   </p>
                 </div>
                 <div

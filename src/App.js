@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter, Switch } from "react-router-dom";
+import { withRouter, Switch, Redirect } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
 
@@ -13,6 +13,8 @@ import Home from "./views/Home";
 //import Secondary from "./views/Secondary";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
+
+import "./App.css";
 
 class App extends React.Component {
   componentDidMount() {
@@ -40,6 +42,7 @@ class App extends React.Component {
               component={Signup}
               layout={LayoutSignin}
             />
+            <Redirect exact from="/reload" to="/signup" />
           </Switch>
         )}
       />

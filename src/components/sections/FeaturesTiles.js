@@ -82,9 +82,10 @@ class FeaturesTiles extends React.Component {
                       data-reveal-container=".tiles-item"
                       data-reveal-delay="200"
                     >
-                      Video docs complement comments by giving extra information.
-                      You can point to specific lines and give detailed explanations
-                      that provide additional context behind the code.
+                      Video docs complement comments by giving extra
+                      information. You can point to specific lines and give
+                      detailed explanations that provide additional context
+                      behind the code.
                     </p>
                   </div>
                 </div>
@@ -119,9 +120,11 @@ class FeaturesTiles extends React.Component {
                       data-reveal-container=".tiles-item"
                       data-reveal-delay="300"
                     >
-                      <b>vgit</b> allows you to tag commits and files with videos, so it can fit into a
-                      git-based workflow. <b>vgit</b> leverages version control history in order to delete
-                      out of date video-docs and ensure video docs are associated properly when files are renamed.
+                      <b>vdoc</b> allows you to tag commits and files with
+                      videos, so it can fit into a git-based workflow.{" "}
+                      <b>vdoc</b> leverages version control history in order to
+                      delete out of date video-docs and ensure video docs are
+                      associated properly when files are renamed.
                     </p>
                   </div>
                 </div>
@@ -156,8 +159,9 @@ class FeaturesTiles extends React.Component {
                       data-reveal-container=".tiles-item"
                       data-reveal-delay="400"
                     >
-                      With <b>vgit</b>, all documentation for the current file is accessible from the command line,
-                      so you don't need to search an external wiki.
+                      With <b>vdoc</b>, all documentation for the current file
+                      is accessible from the command line, so you don't need to
+                      search an external wiki.
                     </p>
                   </div>
                 </div>

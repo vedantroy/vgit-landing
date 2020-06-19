@@ -43,7 +43,7 @@ class SignupForm extends React.Component {
     );
 
     const sectionHeader = {
-      title: "Welcome. We exist to make entrepreneurship easier.",
+      title: "Whoops! We're not quite finished",
     };
 
     return (
@@ -55,6 +55,14 @@ class SignupForm extends React.Component {
               data={sectionHeader}
               className="center-content"
             />
+            <p
+              className="center-content container-xs"
+              style={{ marginBottom: "20px" }}
+            >
+              We're putting the finishing touches on VideoDoc. It should be
+              ready soon! If you'd like us to send you a single reminder when
+              we're ready, just put your email in below.
+            </p>
             <div className="tiles-wrap">
               <div className="tiles-item">
                 <div className="tiles-item-inner">
@@ -77,30 +85,16 @@ class SignupForm extends React.Component {
                           required
                         />
                       </div>
-                      <div className="mb-12">
-                        <Input
-                          type="password"
-                          label="Password"
-                          placeholder="Password"
-                          labelHidden
-                          required
-                        />
-                      </div>
                       <div className="mt-24 mb-32">
-                        <Button color="primary" wide>
-                          Sign up
-                        </Button>
+                        <Link
+                          className="button button-primary button-block"
+                          to="/reload"
+                        >
+                          Submit
+                        </Link>
                       </div>
                     </fieldset>
                   </form>
-                  <div className="signin-bottom has-top-divider">
-                    <div className="pt-32 text-xs center-content text-color-low">
-                      Already have an account?{" "}
-                      <Link to="/login/" className="func-link">
-                        Login
-                      </Link>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

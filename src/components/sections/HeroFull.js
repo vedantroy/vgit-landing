@@ -73,7 +73,7 @@ class HeroFull extends React.Component {
               >
                 <Image
                   className="has-shadow"
-                  src={require("./../../assets/images/video-placeholder.svg")}
+                  src={require("./../../assets/images/main.png")}
                   alt="Video"
                   width={712}
                   height={400}
