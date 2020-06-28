@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "getvideodoc.com/static/css/main.8a4194bf.chunk.css",
-    "main.js": "getvideodoc.com/static/js/main.166ac24e.chunk.js",
-    "main.js.map": "getvideodoc.com/static/js/main.166ac24e.chunk.js.map",
-    "runtime~main.js": "getvideodoc.com/static/js/runtime~main.a4cffd2d.js",
-    "runtime~main.js.map": "getvideodoc.com/static/js/runtime~main.a4cffd2d.js.map",
-    "static/js/2.9f6c5350.chunk.js": "getvideodoc.com/static/js/2.9f6c5350.chunk.js",
-    "static/js/2.9f6c5350.chunk.js.map": "getvideodoc.com/static/js/2.9f6c5350.chunk.js.map",
-    "index.html": "getvideodoc.com/index.html",
-    "precache-manifest.0a4ce730dd6e3f484b0ab422a7ff6d85.js": "getvideodoc.com/precache-manifest.0a4ce730dd6e3f484b0ab422a7ff6d85.js",
-    "service-worker.js": "getvideodoc.com/service-worker.js",
-    "static/css/main.8a4194bf.chunk.css.map": "getvideodoc.com/static/css/main.8a4194bf.chunk.css.map",
-    "static/media/create_video_docs_new.svg": "getvideodoc.com/static/media/create_video_docs_new.51c960c0.svg",
-    "static/media/feature-tile-icon-01.svg": "getvideodoc.com/static/media/feature-tile-icon-01.48f35f3b.svg",
-    "static/media/feature-tile-icon-02.svg": "getvideodoc.com/static/media/feature-tile-icon-02.0eeeba24.svg",
-    "static/media/feature-tile-icon-03.svg": "getvideodoc.com/static/media/feature-tile-icon-03.0f17d4c0.svg",
-    "static/media/get_video_docs.svg": "getvideodoc.com/static/media/get_video_docs.2362889c.svg",
-    "static/media/style.scss": "getvideodoc.com/static/media/illustration-section-08.9b982385.svg",
-    "static/media/logo.svg": "getvideodoc.com/static/media/logo.35e3d5dc.svg",
-    "static/media/main.png": "getvideodoc.com/static/media/main.faff8302.png",
-    "static/media/pricing-icon.svg": "getvideodoc.com/static/media/pricing-icon.8348c907.svg"
-  }
+    "main.css": "/app.getvideodoc.com/static/css/main.dbeeb033.chunk.css",
+    "main.js": "/app.getvideodoc.com/static/js/main.36d2bf16.chunk.js",
+    "main.js.map": "/app.getvideodoc.com/static/js/main.36d2bf16.chunk.js.map",
+    "runtime-main.js": "/app.getvideodoc.com/static/js/runtime-main.47d72e25.js",
+    "runtime-main.js.map": "/app.getvideodoc.com/static/js/runtime-main.47d72e25.js.map",
+    "static/js/2.ba1f77cd.chunk.js": "/app.getvideodoc.com/static/js/2.ba1f77cd.chunk.js",
+    "static/js/2.ba1f77cd.chunk.js.map": "/app.getvideodoc.com/static/js/2.ba1f77cd.chunk.js.map",
+    "index.html": "/app.getvideodoc.com/index.html",
+    "precache-manifest.78c9aabb43278ed8a63273ed588ad22d.js": "/app.getvideodoc.com/precache-manifest.78c9aabb43278ed8a63273ed588ad22d.js",
+    "service-worker.js": "/app.getvideodoc.com/service-worker.js",
+    "static/css/main.dbeeb033.chunk.css.map": "/app.getvideodoc.com/static/css/main.dbeeb033.chunk.css.map",
+    "static/js/2.ba1f77cd.chunk.js.LICENSE.txt": "/app.getvideodoc.com/static/js/2.ba1f77cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47d72e25.js",
+    "static/js/2.ba1f77cd.chunk.js",
+    "static/css/main.dbeeb033.chunk.css",
+    "static/js/main.36d2bf16.chunk.js"
+  ]
 }
