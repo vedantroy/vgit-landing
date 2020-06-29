@@ -43,7 +43,7 @@ class SignupForm extends React.Component {
     );
 
     const sectionHeader = {
-      title: "Whoops! We're not quite finished",
+      title: "Download",
     };
 
     return (
@@ -59,50 +59,39 @@ class SignupForm extends React.Component {
               className="center-content container-xs"
               style={{ marginBottom: "20px" }}
             >
-              We're putting the finishing touches on VideoDoc. It should be
-              ready soon! If you'd like us to send you a single reminder when
-              we're ready, just put your email in below.
+              Clients available for Linux, Windows, and MacOS. Requires the git
+              CLI to be installed.
             </p>
             <div className="tiles-wrap">
               <div className="tiles-item">
                 <div className="tiles-item-inner">
-                  <form action="https://formspree.io/mknqzzjr" method="POST">
-                    <fieldset>
-                      <div className="mb-12">
-                        <Input
-                          label="Full name"
-                          placeholder="Full name"
-                          name="name"
-                          labelHidden
-                          required
-                        />
-                      </div>
-                      <div className="mb-12">
-                        <Input
-                          type="email"
-                          label="Email"
-                          placeholder="Email"
-                          name="email"
-                          labelHidden
-                          required
-                        />
-                        <input
-                          style={{ display: "gone" }}
-                          type="hidden"
-                          name="_next"
-                          value="https://getvideodoc.com"
-                        />
-                      </div>
-                      <div className="mt-24 mb-32">
-                        <Button
-                          className="button button-primary button-block"
-                          type="submit"
-                        >
-                          Submit
-                        </Button>
-                      </div>
-                    </fieldset>
-                  </form>
+                  <div className="mt-24 mb-32">
+                    <a
+                      className="button button-primary button-block"
+                      style={{ textTransform: `none` }}
+                      href="/vdoc-linux-amd64"
+                    >
+                      Linux (x64)
+                    </a>
+                  </div>
+                  <div className="mt-24 mb-32">
+                    <a
+                      className="button button-primary button-block"
+                      style={{ textTransform: `none` }}
+                      href="/vdoc-darwin-amd64"
+                    >
+                      MacOS (x64)
+                    </a>
+                  </div>
+                  <div className="mt-24 mb-32">
+                    <a
+                      className="button button-primary button-block"
+                      style={{ textTransform: `none` }}
+                      href="/vdoc-windows-amd64.exe"
+                    >
+                      Windows (x64)
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

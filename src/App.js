@@ -11,8 +11,8 @@ import LayoutSignin from "./layouts/LayoutSignin";
 // Views
 import Home from "./views/Home";
 //import Secondary from "./views/Secondary";
-import Login from "./views/Login";
 import Signup from "./views/Signup";
+import Download from "./views/Download";
 
 import "./App.css";
 
@@ -30,7 +30,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("V2 -- New changes");
     return (
       <ScrollReveal
         ref="scrollReveal"
@@ -42,6 +41,12 @@ class App extends React.Component {
               path="/signup"
               component={Signup}
               layout={LayoutSignin}
+            />
+            <AppRoute
+              exact
+              path="/download"
+              component={Download}
+              layout={LayoutDefault}
             />
             <Redirect exact from="/reload" to="/signup" />
           </Switch>
